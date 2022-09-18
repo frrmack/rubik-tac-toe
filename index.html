@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <div class="ui__prefs">
+        <div class="ui__prefs" style="visibility: hidden">
             <range name="size" title="Cube Size" list="2,3,4,5"></range>
             <range name="flip" title="Flip Type" list="Swift&nbsp;,Smooth,Bounce"></range>
             <range name="scramble" title="Scramble Length" list="20,25,30"></range>
@@ -91,13 +91,13 @@
             <range name="theme" title="Color Scheme" list="Cube,Erno,Dust,Camo,Rain"></range>
         </div>
 
-        <div class="ui__theme">
+        <div class="ui__theme" style="visibility: hidden">
             <range name="hue" title="Hue" color></range>
             <range name="saturation" title="Saturation" color></range>
             <range name="lightness" title="Lightness" color></range>
         </div>
 
-        <div class="ui__stats">
+        <div class="ui__stats" style="visibility: hidden">
             <div class="stats" name="cube-size">
                 <i>Cube:</i><b>3x3x3</b>
             </div>
@@ -122,19 +122,20 @@
         </div>
 
         <div class="ui__buttons">
-            <button class="btn btn--bl btn--stats">
+            <button class="btn btn--bl btn--stats" style="visibility: hidden">
         <icon trophy></icon>
       </button>
             <button class="btn btn--br btn--prefs">
-        <icon settings></icon>
-      </button>
+              <!-- <icon settings></icon> -->
+              <icon reset></icon>
+            </button>
             <button class="btn btn--bl btn--back">
         <icon back></icon>
       </button>
-            <button class="btn btn--br btn--theme">
+            <button class="btn btn--br btn--theme" style="visibility: hidden">
         <icon theme></icon>
       </button>
-            <button class="btn btn--br btn--reset">
+            <button class="btn btn--br btn--reset" style="visibility: hidden">
         <icon reset></icon>
       </button>
         </div>
