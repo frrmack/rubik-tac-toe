@@ -79,6 +79,8 @@ class Controls {
             this.gettingDrag = this.state === ANIMATING;
 
             const edgeIntersect = this.getIntersect(position.current, this.edges, false);
+            this.cubeEdgeIntersect = this.getIntersect(position.current, this.game.cube.edges, true);
+
 
             if (edgeIntersect !== false) {
 
@@ -197,8 +199,16 @@ class Controls {
                 if (this.flipType === 'layer') {
 
                     // We are marking an edge
-                    console.log("MARK")
+                    this.markEdge(this.cubeEdgeIntersect.object, () => {
 
+                        this.game.storage.saveGame();
+
+                        this.state = this.gettingDrag ? PREPARING : STILL;
+                        this.gettingDrag = false;
+
+                        this.checkIsSolved();
+
+                    });
 
                 }
                 return;
@@ -244,6 +254,20 @@ class Controls {
             }
 
         };
+
+    }
+
+    markEdge(edge, callback) {
+
+        if (edge.material.color.getHex() == 0xfff7ff) {
+            edge.material.color.setHex(0x82ca38);
+        } else if (edge.material.color.getHex() == 0x82ca38) {
+            edge.material.color.setHex(0xff8c0a);
+        } else {
+            edge.material.color.setHex(0xfff7ff);
+        }
+
+        callback();
 
     }
 
