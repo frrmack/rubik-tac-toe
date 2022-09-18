@@ -144,7 +144,7 @@ class Game {
 
             if (this.newGame) {
 
-                this.timer.start(true);
+                // this.timer.start(true);
                 this.newGame = false;
 
             }
@@ -221,7 +221,7 @@ class Game {
 
             setTimeout(() => {
 
-                this.transition.timer(SHOW);
+                // this.transition.timer(SHOW);
                 this.transition.buttons(BUTTONS.Playing, BUTTONS.None);
 
             }, this.transition.durations.zoom - 1000);
@@ -229,7 +229,7 @@ class Game {
             setTimeout(() => {
 
                 this.controls.enable();
-                if (!this.newGame) this.timer.start(true)
+                // if (!this.newGame) this.timer.start(true)
 
             }, this.transition.durations.zoom);
 
@@ -242,8 +242,8 @@ class Game {
             this.transition.zoom(STATE.Menu, 0);
 
             this.controls.disable();
-            if (!this.newGame) this.timer.stop();
-            this.transition.timer(HIDE);
+            // if (!this.newGame) this.timer.stop();
+            // this.transition.timer(HIDE);
 
             setTimeout(() => this.transition.title(SHOW), this.transition.durations.zoom - 1000);
 
@@ -376,10 +376,10 @@ class Game {
             this.saved = false;
 
             this.controls.disable();
-            this.timer.stop();
+            // this.timer.stop();
             this.storage.clearGame();
 
-            this.bestTime = this.scores.addScore(this.timer.deltaTime);
+            // this.bestTime = this.scores.addScore(this.timer.deltaTime);
 
             this.transition.zoom(STATE.Menu, 0);
             this.transition.elevate(SHOW);
@@ -396,10 +396,10 @@ class Game {
             this.state = STATE.Stats;
             this.saved = false;
 
-            this.transition.timer(HIDE);
+            // this.transition.timer(HIDE);
             this.transition.complete(HIDE, this.bestTime);
             this.transition.cube(HIDE);
-            this.timer.reset();
+            // this.timer.reset();
 
             setTimeout(() => {
 
