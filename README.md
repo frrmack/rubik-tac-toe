@@ -3,11 +3,11 @@
 It's a free game designed by [Gizem Boyacıoğlu](https://www.linkedin.com/in/gizemboyacioglu/), code developed by [Irmak Sirer](https://www.irmaksirer.com). 
 It relies heavily on [The Cube](https://github.com/bsehovac/the-cube) code developed by [Boris Šehovac](https://github.com/bsehovac). 
 
-The game is similar to tic-tac-toe, where one player tries to make a chain of **X** symbols, while the other tries to make a chain of **O** symbols first. 
+The game is similar to tic-tac-toe, played on a 3x3 square where one player tries to make a chain of 3 **X** symbols, while the other tries to make a chain of 3 **O** symbols first. This is a three dimensional variant.
 
-- Players put their colors on squares of a 3x3x3 Rubik's Cube 
 - Each player has their color (Green or Orange)
-- When it's a player's turn, they color a square with their color, and then they **may** do a single rotation on the cube.
+- Players put their colors on squares of a 3x3x3 Rubik's Cube 
+- When it's a player's turn, they color a square with their color, then they **may** do a single rotation on the cube
 - Color chains can wrap around the corners, but have to stay on a straight line, nothing but 180 degree angles
 - The game ends: 
     - either when one player reaches a color chain of 7 squares and wins
