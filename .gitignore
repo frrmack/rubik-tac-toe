@@ -4,3 +4,6 @@ node_modules/
 *.sublime-workspace
 
 export/
+
+assets/js/cube.js
+package-lock.json
