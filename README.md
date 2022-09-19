@@ -1,9 +1,11 @@
 
-# Rubik-Tac-Toe
+[![Rubik Tac Toe](https://raw.githubusercontent.com/frrmack/rubik-tac-toe/master/assets/icons/meta-image.png)](https://frrmack.github.io/rubik-tac-toe/)
+
+
 It's a free game designed by [Gizem Boyacıoğlu](https://www.linkedin.com/in/gizemboyacioglu/), code developed by [Irmak Sirer](https://www.irmaksirer.com). 
 It relies heavily on [The Cube](https://github.com/bsehovac/the-cube) code developed by [Boris Šehovac](https://github.com/bsehovac). 
 
-The game is similar to tic-tac-toe, played on a 3x3 square where one player tries to make a chain of 3 **X** symbols, while the other tries to make a chain of 3 **O** symbols first. This is a three dimensional variant.
+The game is similar to tic-tac-toe, which played on a 3x3 square where one player tries to make a chain of 3 **X** symbols, while the other tries to make a chain of 3 **O** symbols first. This is a three dimensional variant.
 
 - Each player has their color (Green or Orange)
 - Players put their colors on squares of a 3x3x3 Rubik's Cube 
@@ -19,7 +21,7 @@ Rubik-tac-toe uses Sass, Scss, HTML and JavaScript.
 
 
 ## Play
-You can play Rubik-Tac-Toe [here!]()
+You can play Rubik-Tac-Toe [here!](https://frrmack.github.io/rubik-tac-toe/)
 
 This version is couch co-op, meaning both players need to play on the same screen, sitting next to each other.
 
